@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://semoss.org/ontologies/Relation/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<rdfs:Class rdf:about="http://semoss.org/ontologies/Concept"/>
+<rdf:Property rdf:about="http://semoss.org/ontologies/Relation"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Title/Title">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual rdf:resource="http://semoss.org/ontologies/Concept/Title"/>
+</rdf:Description>
+<Contains rdf:about="http://semoss.org/ontologies/Relation/Contains/Year/Title"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Title/Title">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/Year/Title">
+			<rdfs:Class rdf:resource="TYPE:INT"/>
+			<Conceptual rdf:resource="http://semoss.org/ontologies/Relation/Contains/Year/Title"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<Contains rdf:about="http://semoss.org/ontologies/Relation/Contains/BestActor/Title"/>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Title/Title">
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">
+		<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/BestActor/Title">
+			<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+			<Conceptual rdf:resource="http://semoss.org/ontologies/Relation/Contains/BestActor/Title"/>
+		</rdf:Description>
+	</DatatypeProperty>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Role_1/Role_1">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual rdf:resource="http://semoss.org/ontologies/Concept/Role_1"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Title.Role_1_FK.Role_1.Role_1">
+	<rdfs:subPropertyOf rdf:resource="http://semoss.org/ontologies/Relation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Role_1/Role_1">
+	<Title.Role_1_FK.Role_1.Role_1 rdf:resource="http://semoss.org/ontologies/Concept/Title/Title"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Actor/Actor">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual rdf:resource="http://semoss.org/ontologies/Concept/Actor"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Role_1.Actor_FK.Actor.Actor">
+	<rdfs:subPropertyOf rdf:resource="http://semoss.org/ontologies/Relation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Actor/Actor">
+	<Role_1.Actor_FK.Actor.Actor rdf:resource="http://semoss.org/ontologies/Concept/Role_1/Role_1"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/TimeStamp">
+	<TIME xmlns="ENGINE:">2018:09:17 10:53:21</TIME>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Actor/Actor">
+	<UNIQUE xmlns="http://semoss.org/ontologies/Relation/Contains/">199</UNIQUE>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Role_1/Role_1">
+	<UNIQUE xmlns="http://semoss.org/ontologies/Relation/Contains/">361</UNIQUE>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Title/Title">
+	<UNIQUE xmlns="http://semoss.org/ontologies/Relation/Contains/">356</UNIQUE>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/BestActor/Title">
+	<UNIQUE xmlns="http://semoss.org/ontologies/Relation/Contains/">2</UNIQUE>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Year/Title">
+	<UNIQUE xmlns="http://semoss.org/ontologies/Relation/Contains/">74</UNIQUE>
+</rdf:Description>
+
+</rdf:RDF>

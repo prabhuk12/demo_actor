@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/FRAME">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<IsPrimKey xmlns="http://semoss.org/ontologies/Relation/Contains/">true</IsPrimKey>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FRAME__Actor">
+	<rdf:type rdf:resource="http://semoss.org/ontologies/Relation/Contains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/FRAME">
+	<Contains xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Relation/Contains/FRAME__Actor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Contains/FRAME__Actor">
+	<QueryStructName xmlns="http://semoss.org/ontologies/Relation/Contains/">45de723b-5ba1-4334-88e7-f364693c06e7:::Actor</QueryStructName>
+	<IsDerived xmlns="http://semoss.org/ontologies/Relation/Contains/">false</IsDerived>
+	<Alias xmlns="http://semoss.org/ontologies/Relation/Contains/">Actor</Alias>
+	<DatatypeProperty xmlns="http://www.w3.org/2002/07/owl#">STRING</DatatypeProperty>
+</rdf:Description>
+
+</rdf:RDF>
